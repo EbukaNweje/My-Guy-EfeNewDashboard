@@ -26,7 +26,7 @@ const Forgottenpassword = () => {
       const Onsubmit = async (data, e) => {
         e.preventDefault(); 
         setLoading(true)
-        const url = 'https://newswifteatrnbackend.onrender.com/api/forgotpassword'
+        const url = 'https://my-guy-efabackend.onrender.com/api/forgotpassword'
         const FormData ={
             email: data.email
         }
@@ -94,7 +94,7 @@ const Forgottenpassword = () => {
             </div>
             <div className="w-full phone:h-24 phone:gap-3 phone:flex-col phone:justify-center  phone:py-4 h-14 text-white px-48 flex items-center justify-between bg-[#0e1120]">
                 <div className="w-max flex items-center gap-4">
-                <p className="flex gap-5 items-center text-white">&copy;  Copy Rights {currentYear}. All Rights Reserved Swifteatrn Prime</p>
+                <p className="flex gap-5 items-center text-white">&copy;  Copy Rights {currentYear}. All Rights Reserved Okx Assets</p>
                 </div>
                 <div className="w-max flex items-center gap-5 ">
                     <FaTwitter />

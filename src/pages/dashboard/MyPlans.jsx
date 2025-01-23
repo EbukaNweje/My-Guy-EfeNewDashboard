@@ -20,7 +20,7 @@ const MyPlans = () => {
         setLoading(true);
         try {
             const response = await axios.get(
-                'https://new-swifteatrn-back-end-nine.vercel.app/api/getallplan'
+                'https://my-guy-efa-back-end-beryl.vercel.app/api/getallplan'
             );
             console.log(response.data.data);
             

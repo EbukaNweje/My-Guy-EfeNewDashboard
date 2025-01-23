@@ -17,7 +17,7 @@ const id = useSelector((state)=> state.id)
         setLoading(true);
         try {
             const response = await axios.get(
-                `https://new-swifteatrn-back-end-nine.vercel.app/api/getallinvestmentplan/${id}`
+                `https://my-guy-efa-back-end-beryl.vercel.app/api/getallinvestmentplan/${id}`
             );
             setUserDatas(response.data.data);
             console.log(response.data.data);

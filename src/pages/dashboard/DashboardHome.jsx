@@ -20,7 +20,7 @@ const DashboardHome = () => {
     // const userName = userDatas?.userName
     // console.log("this is UserName", userName)
     const [state, setState] = useState({
-        value: `https://swifteatrnprime.vercel.app/ref/`,
+        value: `https://theokxasset.vercel.app/ref/`,
         copied: false,
       });
 
@@ -30,7 +30,7 @@ const DashboardHome = () => {
 
     const handleGetUser = async () => {
         setLoading(true)
-        await axios.get(`https://new-swifteatrn-back-end-nine.vercel.app/api/userdata/${id}`)
+        await axios.get(`https://my-guy-efa-back-end-beryl.vercel.app/api/userdata/${id}`)
             .then(response => {
                 setLoading(false)
                 setUserDatas(response?.data?.data);
