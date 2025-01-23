@@ -74,6 +74,7 @@ const handlegetallWalletAddress = async () => {
     await axios.get('https://my-guy-efa-back-end-beryl.vercel.app/api/getallWalletAddress')
         .then(response => {
              setWallets(response?.data?.data)
+             console.log(response?.data?.data)
         })
         .catch(error => {
             console.log(error);

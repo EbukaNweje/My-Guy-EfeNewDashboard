@@ -22,10 +22,7 @@ const DepositPay = () => {
     const [pay, setPay] = useState()
     const [h, setH] = useState();
     const [coin, setCoin] = useState();
-    const [state, setState] = useState({
-      value: h,
-      copied: false,
-    });
+   
 
     //   wallets?.map((props)=> {walletInfo.wallet === props.walletName ? setH(props?.walletName) : "Loading...";})
       
@@ -34,6 +31,7 @@ const DepositPay = () => {
         await axios.get('https://my-guy-efa-back-end-beryl.vercel.app/api/getallWalletAddress')
             .then(response => {
                  setWallets(response?.data?.data)
+                 console.log(response?.data?.data)
                 // dispatch(userData(response?.data.data));
             })
             .catch(error => {
@@ -51,7 +49,14 @@ const DepositPay = () => {
         }
       }, [wallets, walletInfo]); 
       
-  
+
+      const [state, setState] = useState({
+        value: "1MDtF3wwvZZ761W4bue4PsrLLq6cv3bnxn",
+        copied: false,
+      });
+
+    //   console.log("this is h",wallets[0].walletAddress)
+
     useEffect(() => {
         setState((prevState) => ({
             ...prevState,
